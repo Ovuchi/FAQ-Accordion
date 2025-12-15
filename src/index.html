@@ -5,7 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
+  <style>
+    :root {
+      --text-hover: #f9f0ff;
+    }
+  </style>
   <body>
-    <h1 class="text-3xl font-bold underline bg-blue-500">Hello world!</h1>
+    <div class="min-h-screen flex flex-col">
+      <!-- Upper part with background image -->
+      <div
+        class="h-[35vh] bg-cover bg-center bg-no-repeat"
+        style="
+          background-image: url('../assets/images/background-pattern-mobile.svg');
+        "
+      ></div>
+
+      <!-- Lower part with HSL color -->
+      <div class="h-[65vh]" style="background-color: hsl(275, 100%, 97%)">
+        <div
+          class="w-[80%] mx-auto mt-[-90px] rounded-lg pt-6"
+          style="background-color: hsl(0, 100%, 100%)"
+        >
+          <div
+            class="w-[45%] h-[15%] ml-8 flex flex-row items-center justify-between gap-1.5"
+          >
+            <img src="../assets/images/icon-star.svg" alt="star" />
+            <h1 class="text-4xl font-extrabold">FAQs</h1>
+          </div>
+
+          <!-- Question 1 -->
+          <div class="faq-item w-full">
+            <button
+              class="faq-btn cursor-pointer w-full text-left p-4 flex flex-row justify-between"
+            >
+              <p class="font-bold text-[20px] hover:text-[#8c6991]">
+                What is Frontend Mentor, and how will it help me?
+              </p>
+              <img
+                src="../assets/images/icon-plus.svg"
+                alt=""
+                class="plus-or-minus"
+              />
+            </button>
+            <p class="faq-content hidden p-4 text-[17px]">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend skills with projects in HTML,
+              CSS, and JavaScript. It's suitable for all levels and ideal for
+              portfolio building.
+            </p>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item w-full">
+            <button
+              class="faq-btn cursor-pointer w-full text-left p-4 flex flex-row justify-between"
+            >
+              <p
+                class="font-bold text-[20px] hover:text-[#8c6991] hover: text-[hsl(292, 16%, 49%)]"
+              >
+                Is Frontend Mentor free?
+              </p>
+              <img
+                src="../assets/images/icon-plus.svg"
+                alt=""
+                class="plus-or-minus"
+              />
+            </button>
+            <p class="faq-content hidden p-4 text-[17px]">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend skills with projects in HTML,
+              CSS, and JavaScript. It's suitable for all levels and ideal for
+              portfolio building.
+            </p>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item w-full">
+            <button
+              class="faq-btn cursor-pointer w-full text-left p-4 flex flex-row justify-between"
+            >
+              <p class="font-bold text-[20px] hover:text-[#8c6991]">
+                Can I use Frontend Mentor projects in my portfolio?
+              </p>
+              <img
+                src="../assets/images/icon-plus.svg"
+                alt=""
+                class="plus-or-minus"
+              />
+            </button>
+            <p class="faq-content hidden p-4 text-[17px]">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend skills with projects in HTML,
+              CSS, and JavaScript. It's suitable for all levels and ideal for
+              portfolio building.
+            </p>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item w-full">
+            <button
+              class="faq-btn cursor-pointer w-full text-left p-4 flex flex-row justify-between"
+            >
+              <p class="font-bold text-[20px] hover:text-[#8c6991]">
+                How can I get help if I'm stuck on a challenge?
+              </p>
+              <img
+                src="../assets/images/icon-plus.svg"
+                alt=""
+                class="plus-or-minus"
+              />
+            </button>
+            <p class="faq-content hidden p-4 text-[17px]">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend skills with projects in HTML,
+              CSS, and JavaScript. It's suitable for all levels and ideal for
+              portfolio building.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
